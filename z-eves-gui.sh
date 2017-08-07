@@ -22,5 +22,5 @@ zeves="${zsysdir}/z-eves-pc-linux-cmucl.core"
 
 export LC_ALL=C
 export ZEVESCMD="\"${lispdir}/lisp\" -core \"${zeves}\" -- -libs \"${zlibdir}\""
-xset fp+ "${zevesdir}/zedfont"
-exec $python "${zguidir}/toplevel.pyc" "$@"
+xset fp+ "${zevesdir}"/zedfont
+exec "${python}" "${zguidir}/toplevel.pyc" "$@"
