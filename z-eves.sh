@@ -15,5 +15,6 @@ lispdir="${zevesdir}/system"
 zsysdir="${zevesdir}/system"
 zlibdir="${zevesdir}/library/"
 zeves="${zsysdir}/z-eves-pc-linux-cmucl.core"
+rlwrap="${SOURCE_DIR}/bin/rlwrap"
 
-exec "${lispdir}/lisp" -core "${zeves}" -- -libs "${zlibdir}" "$@"
+exec "${rlwrap}" "${lispdir}/lisp" -core "${zeves}" -- -libs "${zlibdir}" "$@"
